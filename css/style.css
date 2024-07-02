@@ -3,12 +3,16 @@
 :root{
     --colordefondoPrincial: #0a0b0c;
 }
+/* utilizo flexbox para linear los elementos dentro del header y dentro del div contenedor de h1 y el buscador */
+
 .header{
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     background-color: var(--colordefondoPrincial) ;
+    height: 60px;
+    border-bottom: solid  #515152a8 2px;
 
 }
 .contenedor-h1-buscador{
@@ -20,26 +24,41 @@
     color: #ffffff;
     font-family: "Roboto", sans-serif;
     font-size: 25px;
-    padding: 5px 15px;
-}
+    padding: 0 30px;
 
+}
+.linea-divisoria-vertical{
+     height: 58px;
+    border: solid #515152a8 1px;
+
+}
 .icon-buscar{
-    color: #555556;
+    color: #646466;
     font-size: 16px;
+    padding: 0px 0px 0px 20px;
 }
 
 .input-buscar{
     font-family: "Roboto", sans-serif;
+    font-weight: 600;
     color:#555556 ;
     background-color: var(--colordefondoPrincial);
+    outline: none;
     border: none;
-    padding: 0 8px;
+    padding: 7px 15px 7px 7px;
 }
 
-
+.contenedor-hr-imgperfil{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .imagen-perfil-menu{
     width: 40px;
     height: 40px;
+    margin: 0px 30px;
     border-radius: 50px;
+
 }
+
 
