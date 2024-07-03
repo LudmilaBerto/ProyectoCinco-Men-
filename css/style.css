@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+}
 :root{
     --colordefondoPrincial: #0a0b0c;
 }
@@ -12,7 +16,7 @@
     justify-content: space-between;
     background-color: var(--colordefondoPrincial) ;
     height: 60px;
-    border-bottom: solid  #515152a8 2px;
+    border-bottom: solid  #515152a8 1px;
 
 }
 .contenedor-h1-buscador{
@@ -23,7 +27,7 @@
 .logo-h1{
     color: #ffffff;
     font-family: "Roboto", sans-serif;
-    font-size: 25px;
+    font-size: 22px;
     padding: 0 30px;
 
 }
@@ -32,10 +36,24 @@
     border: solid #515152a8 1px;
 
 }
+
+/* alineo los elemento dentro del form */
+
+.form-busca{
+    display: flex;
+    flex-direction: row;
+
+}
+.btn-buscar{
+    background-color: var(--colordefondoPrincial);
+    border: none;
+    cursor: pointer;
+}
+
 .icon-buscar{
     color: #646466;
     font-size: 16px;
-    padding: 0px 0px 0px 20px;
+    padding-left: 20px;
 }
 
 .input-buscar{
@@ -61,4 +79,42 @@
 
 }
 
+/* Aqui comienza el main */
+.main{
+    background-color: var(--colordefondoPrincial);
+}
 
+.Section1{
+    width: 100vw;
+}
+
+.contenedor-etiquetas-h3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 60px;
+    border-bottom: solid  #515152a8 1px;
+}
+
+.h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    color:#ffffff;
+    margin-top:  0px;
+    margin-bottom: 9px;
+    padding: 0 10px;
+    align-self: flex-end;
+
+}
+.contenedor-imagenes{
+    columns: 4 200px;
+    column-gap: 1.7em;
+    padding: 30px 60px;
+}
+
+
+img{
+    max-width: 100%;
+    padding-bottom: 25px;
+}
