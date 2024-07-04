@@ -92,14 +92,13 @@
     width: 100vw;    
 }
 
-/* Creo 2 li que contengas etiquetas <a> para las pestañas de following y for you  */
+/* Creo 2 li que contengas etiquetas <a> para las pestañas dentro del div class "Contenido" */
 
 .menu {
     list-style-type: none;
     display: flex;
     justify-content: center;
     height: 60px;
-    /* padding: 20px 60px; */
     border-bottom: solid  #515152a8 1px;
 
 }
@@ -125,8 +124,11 @@
 .menu li a:hover{
     color: #ffff;
 }
+
+
 /* .menu li a::after: Creamos un pseudo-elemento ::after para representar el subrayado.
-Le aplico a la etiqueta li contenida en la class .menu un position absolute para posiciona el seudo-elemento en la parte inferior del enlace */
+Le aplico a la etiqueta li contenida en la class .menu un position absolute para posicionar el seudo-elemento en la parte inferior del enlace */
+
 .menu li a::after {
     content: '';
     position: absolute;
@@ -140,6 +142,8 @@ Le aplico a la etiqueta li contenida en la class .menu un position absolute para
     transition: transform 0.3s ease;
 }
 
+
+/* Aplico a continuación un efecto de subrayado a los enlaces (<a>) dentro de una lista (<li>) con clase .menu cuando están enfocados, activos o cuando el cursor se sitúa sobre ellos. */
 .menu li a:focus::after,
 .menu li a:active::after,
 .menu li a:hover::after {
@@ -165,6 +169,9 @@ Le aplico a la etiqueta li contenida en la class .menu un position absolute para
     padding: 20px 80px;
 
 }
+
+/* Creo un diseño de columnas: 4 columnas de al menos 200px, separadas por 20px y con padding de 0.5rem */
+
 .contenedor-imagenes{
     columns: 4 200px;
     column-gap: 20px;
@@ -181,45 +188,3 @@ img{
     width: 100%;
 }
 
-/* .contenedor-etiquetas-h3{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    height: 60px;
-    border-bottom: solid  #515152a8 1px;
-}
-
-.h3{
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-size: 17px;
-    margin-bottom: 9px;
-    padding: 0 10px;
-    align-self: flex-end;
-
-}
-
-/* le doy espacio a los lados a la galeria */
-
-/* .galeriaDeImagenes{
-
-    padding: 20px 80px;
-
-} */
-
-/* modifico en contenedor de imagenes y los div que contienen a las img para que la galeria de imagenes se visualice de cierta manera */
-/* .contenedor-imagenes{
-    columns: 4 200px;
-    column-gap: 20px;
-    padding: .5rem;
-} */
-
-/* .div-item{
-    width: 100%;
-    margin-bottom: 20px;
-}
-
-
-img{
-    width: 100%;
-}  */
