@@ -27,5 +27,10 @@ A continuación, se muestran capturas de pantalla del menú en diferentes tamañ
 
 
 ## Tecnologías Utilizadas
-- HTML5
-- CSS3
+### Lenguajes
+    - HTML5
+    - CSS3
+    
+### Fuentes
+    - Google Font
+    - Font Awesome
